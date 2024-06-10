@@ -19,10 +19,10 @@ const getIcon = (icon) => {
 };
 
 const appendContacts = (contacts) => {
-	contacts.forEach(({name, email, tel, icon}) => {
+	contacts.forEach(({name, tel, icon}) => {
 		const contactElement = document.createElement("li");
 
-		contactElement.innerText = `${name}: ${tel ?? email}`;
+		contactElement.innerText = `${name}: ${tel}`;
 		contactList.appendChild(contactElement);
 
 		const imageElement = getIcon(icon);
