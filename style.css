@@ -15,6 +15,10 @@
 	-webkit-text-size-adjust: 100%;
 }
 
+* {
+	box-sizing: border-box;
+}
+
 a {
 	font-weight: 500;
 	color: #646cff;
@@ -25,11 +29,28 @@ a:hover {
 }
 
 body {
-	margin: 0;
 	display: flex;
-	place-items: center;
+	flex-flow: column;
+	place-items: center center;
+
+	margin: 0;
+	padding: 30px;
+
 	min-width: 320px;
 	min-height: 100vh;
+}
+
+footer {
+	flex: 0 1 10%;
+
+	a {
+		font-weight: 500;
+		color: #fff8;
+
+		&:hover {
+			color: #fffa;
+		}
+	}
 }
 
 h1 {
@@ -38,8 +59,11 @@ h1 {
 }
 
 #app {
-	margin: 0 auto;
-	padding: 2rem;
+	flex: 1 0 90%;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+
 	text-align: center;
 }
 
