@@ -5,7 +5,7 @@ const stopVibrateButton = document.querySelector("#stop-vibrate-button");
 const millisecondsInput = document.querySelector("#milliseconds-input");
 
 vibrateButton.addEventListener("click", () => {
-	navigator.vibrate(millisecondsInput.value * 1000);
+	navigator.vibrate(millisecondsInput.value);
 });
 
 stopVibrateButton.addEventListener("click", () => {
