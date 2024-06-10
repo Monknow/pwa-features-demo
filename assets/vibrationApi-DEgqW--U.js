@@ -1,0 +1,1 @@
+import"./style-CW2us1CI.js";const t=document.querySelector("#vibrate-button"),e=document.querySelector("#stop-vibrate-button"),n=document.querySelector("#milliseconds-input");t.addEventListener("click",()=>{navigator.vibrate(n.value)});e.addEventListener("click",()=>{navigator.vibrate(0)});
